@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vision</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <!-- google api client -->
+    <script src="https://apis.google.com/js/client.js"></script>
+    <link href="./assets/css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+        <link rel="icon" href="./assets/images/vision-icon.png" type="image/x-icon" />
+
+</head>
+
+<body>
+    <!-- header -->
+    <div class="jumbotron jumbotron-fluid mainWidth header-font">
+        <div class="container">
+            <div class="row">
+                <h1 class="display-4 text-center"></i>Vision</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row mt-4 file-bar mainWidth">
+            <div class="row mainWidth">
+                <div class="col-md-6 photoDisplay">
+                    <div class="row buttonDiv">
+
+                        <!-- upload photo input -->
+                        <label id="upload" class="message-font-header" for="upload-photo">Upload an image here!</label>
+                        <input type="file" name="photo" id="upload-photo" onchange="encodeImageFileAsURL(this)" />
+                    </div>
+                </div>
+
+                <!-- photo section -->
+                <div class="container mainWidth">
+                    <div id="picDiv" class="mb-2 row"></div>
+                </div>
+                <div class="row mainWidth"></div>
+            </div>
+        </div>
+
+        <!-- tab form -->
+        <div class="tabs mainWidth">
+            <ul class="tab-links mt-3">
+                <li class="active"><a href="#tab2"><i class="fas fa-tags"></i> SEO</a></li>
+                <li><a href="#tab3"><i class="fas fa-hashtag"></i> Hashtags</a></li>
+
+                <!-- loading spinner -->
+                <li id="spinner" class="spinner-border text-light ml-3" role="status">
+                    <span class="sr-only">Loading...</span>
+                </li>
+            </ul>
+
+            <!-- user context -->
+            <div id="message" class="message-font m-3 row"></div>
+
+            <!-- content -->
+            <div class="tab-content">
+
+                <!-- default seo tag -->
+                <div id="tab2" class="tab active">
+                    <div class="row text-center">
+                        <div class="col-md-12">
+
+                            <!-- buttons -->
+                            <div class="buttons"></div>
+                        </div>
+                    </div>
+
+                    <!-- copy items to clipboard -->
+                    <button id="submit-button" class="m-2" onclick="copyToClipboard('.clicked-seo')"><i
+                            class="far fa-copy"></i>
+                        Copy</button>
+
+                    <!-- synonyms -->
+                    <div class="results m-2"></div>
+
+                    <!-- definition -->
+                    <div class="definition m-2"></div>
+                </div>
+
+                <!-- hashtag tab -->
+                <div id="tab3" class="tab">
+                    <div class="row text-center">
+                        <div class="col-md-12">
+                            <div class="buttons"></div>
+                        </div>
+                    </div>
+                    <button id="submit-button" class="m-2" onclick="copyToClipboard('.clicked-hash')"><i
+                            class="far fa-copy"></i>
+                        Copy</button>
+                    <p class="m-2" style="color:black">Grab a Hashtag</p>
+                    <div class="hashTag-results m-2"></div>
+                    <div class="definition m-2"></div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+        </script>
+    <!-- bootstrap js -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+        </script>
+    <!-- firebase -->
+    <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase.js"></script>
+    <!-- axios -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.js"
+        integrity="sha256-XmdRbTre/3RulhYk/cOBUMpYlaAp2Rpo/s556u0OIKk=" crossorigin="anonymous"></script>
+    <!-- jquery js -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <!-- app -->
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

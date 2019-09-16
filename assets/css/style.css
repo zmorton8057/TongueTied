@@ -1,0 +1,213 @@
+/*Color Pallettes: (#6C98C6 - Windstorm (Darker Blue))   (#98B7D7 - Carolina Blue (lighter))   (#EF7239 - Orange Crush)   (#F3F3F3 - White Smoke)           */
+
+html{
+	min-height:100%
+}
+
+img {
+	height: 200px; 
+	width: 300px; 
+	margin-left: 5%;
+}
+
+body{
+	background-image: linear-gradient(-45deg, #EF7239, #4bbef8);
+	color: #21acf1;
+	font-size: 16px;
+	font-family: 'Raleway', sans-serif;
+	background-position: no-repeat;
+	background-size: cover;
+}
+
+.contentMain{
+	width:86%;
+	margin-left: 7%;
+	margin-right: 7%;
+	margin-top: 3%;
+	border: solid #dfdede;
+	border-radius: 5px;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	
+}
+
+.lead{
+	margin-left: 10%;
+	font-size: 18px;
+}
+
+.buttonDiv{
+	max-height: 40px;
+}
+/*----- Tabs -----*/
+.tabs {
+	/* border-top: solid 5px; */
+	background-image: linear-gradient(-45deg, #4bbef8, rgb(233, 145, 104));
+	padding-top: 3px;
+	display: inline-flex;
+	display: inline-block;
+	border-left: solid #dfdede;
+	border-right: solid #dfdede;
+}
+
+/*----- Tab Links -----*/
+/* Clearfix */
+	.tab-links:after {
+	display:block;
+	clear:both;
+	content:'';
+}
+
+.tab-links li {
+	margin-left: 5px;
+	float:left;
+	list-style:none;
+}
+
+.tab-links a {
+	padding:9px 15px;
+	display:inline-block;
+	border-radius:3px 3px 0px 0px;
+	/* background:#7FB5DA; */
+	font-size:16px;
+	font-weight:600;
+	color: white;
+	transition:all linear 0.5s;
+}
+
+.tab-links a:hover {
+	background:#7FB5DA;
+	text-decoration:none;
+}
+
+li.active a, li.active a:hover {
+	background: #7FB5DA;
+	color: white;
+}
+
+/*----- Content of Tabs -----*/
+.tab-content {
+	padding:10px;
+	border-radius:3px;
+	box-shadow:-1px 1px 1px rgba(0,0,0,0.15);
+	background: #dfdede;
+	color: #4bbef8;
+	margin-bottom: 5px;
+}
+
+.tab {
+	display:none;
+	min-height: 300px;
+	width: 100%;
+}
+
+.tab.active {
+	display:block;
+	
+}
+
+ul {
+	padding-inline-start: 1%;
+}
+
+.tab-links{
+	min-width: 326px;
+}
+
+.picDiv{
+    width: 100%;
+	min-width: 500px;
+
+}
+.photoDisplay{
+	background-color: #dfdede;
+	width: 90%;
+	margin: 2%;
+	
+}
+
+.file-bar{
+    background-color: #dfdede;
+    min-height: 300px;
+    width:100%;
+}
+
+.mainWidth{
+	width: 100%;
+	margin: 0;
+}
+
+.jumbotron{
+	border-bottom: solid 5px rgb(243, 164, 127);
+	padding-top: 2%;
+	padding-bottom: 0;
+	background: #f3f3f3;
+}
+
+.ml15 {
+	font-weight: 800;
+	font-size: 3.8em;
+	text-transform: uppercase;
+	letter-spacing: 0.5em;
+  }
+  
+  .ml15 .word {
+	display: inline-block;
+	line-height: 1em;
+  }
+
+  #submit-button{
+	  background-color: rgb(233, 145, 104);
+	  color: white;
+  }
+
+  #submit-button:hover{
+	background-color: #7FB5DA;
+	color: white;
+}
+
+#upload {
+	cursor: pointer;
+	/* Style as you please, it will become the visible UI component. */
+ }
+ 
+ #upload-photo {
+	opacity: 0;
+	position: absolute;
+	z-index: -1;
+ }
+
+ .message-font {
+	 color: white;
+ }
+
+.message-font-header {
+	border: .5px solid black;
+	border-radius: 5px;
+	padding: 5px 10px;
+	margin: 2px;
+	color: black;
+}
+
+.definition {
+	color: black;
+}
+
+.clicked-seo {
+	background-color: #ffc579; background-image: -webkit-gradient(linear, left top, left bottom, from(#ffc579), to(#fb9d23));
+ background-image: -webkit-linear-gradient(top, #ffc579, #fb9d23);
+ background-image: -moz-linear-gradient(top, #ffc579, #fb9d23);
+ background-image: -ms-linear-gradient(top, #ffc579, #fb9d23);
+ background-image: -o-linear-gradient(top, #ffc579, #fb9d23);
+ background-image: linear-gradient(to bottom, #ffc579, #fb9d23);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#ffc579, endColorstr=#fb9d23);
+	color: white; 
+}
+.clicked-hash {
+	background-color: #ffc579; background-image: -webkit-gradient(linear, left top, left bottom, from(#ffc579), to(#fb9d23));
+ background-image: -webkit-linear-gradient(top, #ffc579, #fb9d23);
+ background-image: -moz-linear-gradient(top, #ffc579, #fb9d23);
+ background-image: -ms-linear-gradient(top, #ffc579, #fb9d23);
+ background-image: -o-linear-gradient(top, #ffc579, #fb9d23);
+ background-image: linear-gradient(to bottom, #ffc579, #fb9d23);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#ffc579, endColorstr=#fb9d23);
+	color: white; 
+}
