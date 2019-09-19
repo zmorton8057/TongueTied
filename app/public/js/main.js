@@ -94,7 +94,7 @@ function encodeImageFileAsURL(element) {
         // axios post method to vision api; pass in the constructed object for post request
         axios
             .post(
-                "https://vision.googleapis.com/v1/images:annotate?key=AIzaSyBk4y2OKobnIOgdt4ggGlK8pbjHry4UpPI",
+                /////////////////THIS IS WHERE THE API KEY WAS PREVIOUSLY FOR GOOGLE VISION
                 requestArr[n].request
             )
             .then(function (response) {
@@ -151,8 +151,7 @@ $(document.body).on("click", ".newButton", function () {
 
     var searchQueryTrim = searchQuery.replace(/[\W_]+/g, '').toLowerCase()
 
-    // key to api
-    var apiKey = "00c5bc8f-694b-401c-8e1a-3d53225e08f3";
+
 
     // search term with apikey
     var websterApiRoute = `https://www.dictionaryapi.com/api/v3/references/thesaurus/json/${searchQuerySpace}?key=${apiKey}`;
@@ -238,7 +237,7 @@ $(document.body).on("click", ".newButton", function () {
     $.get({
         url: `https://wordsapiv1.p.mashape.com/words/${searchQuerySpace}`,
         headers: {
-            "X-Mashape-Key": "d0365a5fecmsh001a788d875b48cp15f702jsn438745cf2e54",
+            //////////////////////// wordsAPI x-mashape key was here
             Accept: "application/json"
         }
     }).done(function (wordApi) {
