@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style/styles.css">
+    <title>Friend Finder</title>
+</head>
+
+<body>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">Survey</h1>
+            <p class="lead">Choose a number, least relevant(1) to most relevant(5).</p>
+        </div>
+    </div>
+    <div class="container">
+        <div id="someDivId"></div>
+        <form class="form-inline" method="submit" action="/survey">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name">
+
+            <div class="form-row align-items-center">
+                <div class="col-auto my-1">
+                    <label class="mr-sm-2" for="inlineFormCustomSelect">1. I consider myself outgoing</label>
+                    <select class="custom-select mr-sm-2" id="question1">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <div class="col-auto my-1">
+                    <label class="mr-sm-2" for="inlineFormCustomSelect">2. I like trying new things</label>
+                    <select class="custom-select mr-sm-2" id="question2">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <div class="col-auto my-1">
+                    <label class="mr-sm-2" for="inlineFormCustomSelect">3. I am confident</label>
+                    <select class="custom-select mr-sm-2" id="question3">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <div class="col-auto my-1">
+                    <label class="mr-sm-2" for="inlineFormCustomSelect">4. I find it easy to voice my opinion</label>
+                    <select class="custom-select mr-sm-2" id="question4">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <div class="col-auto my-1">
+                    <label class="mr-sm-2" for="inlineFormCustomSelect">5. I am studious</label>
+                    <select class="custom-select mr-sm-2" id="question5">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <div class="col-auto my-1">
+                    <label class="mr-sm-2" for="inlineFormCustomSelect">6. I like hiking</label>
+                    <select class="custom-select mr-sm-2" id="question6">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <div class="col-auto my-1">
+                    <label class="mr-sm-2" for="inlineFormCustomSelect">7. I like going out for drinks</label>
+                    <select class="custom-select mr-sm-2" id="question7">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <div class="col-auto my-1">
+                    <label class="mr-sm-2" for="inlineFormCustomSelect">8. I am a happy person</label>
+                    <select class="custom-select mr-sm-2" id="question8">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <div class="col-auto my-1">
+                    <label class="mr-sm-2" for="inlineFormCustomSelect">9. I am mostly positive</label>
+                    <select class="custom-select mr-sm-2" id="question9">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <div class="col-auto my-1">
+                    <label class="mr-sm-2" for="inlineFormCustomSelect">10. I want people to like me</label>
+                    <select class="custom-select mr-sm-2" id="question10">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <div class="col-auto my-1">
+                    <button type="submit" class="btn btn-primary submit">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script type="text/JavaScript">
+
+
+        $(".submit").on("click", function(event) {
+            event.preventDefault();
+
+            // Here we grab the form elements
+            var user = {
+                name: $("#name").val().trim(),
+                scores: [
+                    $("#question1").val().trim(),
+                    $("#question2").val().trim(),
+                    $("#question3").val().trim(),
+                    $("#question4").val().trim(),
+                    $("#question5").val().trim(),
+                    $("#question6").val().trim(),
+                    $("#question7").val().trim(),
+                    $("#question8").val().trim(),
+                    $("#question9").val().trim(),
+                    $("#question10").val().trim()
+            ]
+            };
+            
+
+            $.post("/api/friends", user, function(user) {
+                    alert("new user added!");
+            })
+            .then(function(resp) {
+                $( "#someDivId" ).append(` <p>You have matched with ${resp.name}</p>` );
+                console.log(resp.name)    
+            });
+            
+            
+                
+        });
+
+
+    </script>
+
+</body>
+
+</html>
