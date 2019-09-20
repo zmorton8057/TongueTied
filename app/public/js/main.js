@@ -1,3 +1,5 @@
+
+
 $('#spinner').hide();
 $('#submit-button').hide()
 
@@ -95,7 +97,7 @@ function encodeImageFileAsURL(element) {
         axios
             .post(
                 /////////////////THIS IS WHERE THE API KEY WAS PREVIOUSLY FOR GOOGLE VISION
-                `https://vision.googleapis.com/v1/images:annotate?key=${keys.googleVision}`,
+                `https://vision.googleapis.com/v1/images:annotate?key=${googleVision}`,
                 //////////////// The code above does not work key stored in .env
                 requestArr[n].request
             )

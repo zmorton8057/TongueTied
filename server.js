@@ -32,3 +32,4 @@ app.use('/', routes)
 
 app.listen(PORT, () => console.log(`Listening on Port ${PORT}!`))
 
+module.exports = keys
