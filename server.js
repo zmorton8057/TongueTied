@@ -5,6 +5,8 @@ const data = require('./app/routing/apiRoutes.js');
 var bodyParser = require('body-parser')
 const path = require('path');
 var allFriends = require(path.join(__dirname, './app/data/friends.js'))
+require('dotenv').config();
+const keys = require('./app/config/config');
 
 
 var PORT = process.env.PORT || 3000;
